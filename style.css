@@ -32,17 +32,4 @@ body {
   color: white;
   font-size: 34px;
   font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 8px 0 #9c2458;
-}
-
-#botaoJogar:active {
-  top: 71%;
-  box-shadow: 0 3px 0 #9c2458;
-}
-
-#game {
-  display: none;
-  width: 100vw;
-  height: 100vh;
 }
