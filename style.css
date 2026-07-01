@@ -14,8 +14,10 @@ body {
   width: 100vw;
   height: 100vh;
   background-image: url("assets/tela-inicial.png");
-  background-size: cover;
-  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #24153d;
   position: relative;
 }
 
