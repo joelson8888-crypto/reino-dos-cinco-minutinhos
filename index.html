@@ -8,21 +8,27 @@
 </head>
 <body>
 
-  <section id="telaInicial">
-    <button id="botaoJogar">❤ JOGAR</button>
-  </section>
+<section id="telaInicial">
+  <button id="botaoJogar">❤ JOGAR</button>
+</section>
 
-  <section id="telaVitoria">
-    <div class="caixa-vitoria">
-      <h1>RAYANINHA FOI SALVA!</h1>
-      <p>Joelson derrotou o Despertador Maligno antes das 9h.</p>
-      <p>A princesa acordou feliz e ganhou mais cinco minutinhos de sono.</p>
-      <button onclick="location.reload()">JOGAR DE NOVO</button>
-    </div>
-  </section>
+<section id="telaVitoria">
+  <div class="caixa">
+    <h1>RAYANINHA FOI SALVA!</h1>
+    <p>Joelson derrotou o Despertador Maligno antes das 9h.</p>
+    <p>A princesa ganhou mais cinco minutinhos de sono.</p>
+    <button onclick="location.reload()">JOGAR DE NOVO</button>
+  </div>
+</section>
 
-  <canvas id="game"></canvas>
+<canvas id="game"></canvas>
 
-  <script src="game.js"></script>
+<div id="controlesMobile">
+  <button id="esquerda">⬅</button>
+  <button id="pular">⬆</button>
+  <button id="direita">➡</button>
+</div>
+
+<script src="game.js"></script>
 </body>
 </html>
