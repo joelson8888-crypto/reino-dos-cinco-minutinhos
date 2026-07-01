@@ -6,13 +6,17 @@ const ctx = canvas.getContext("2d");
 canvas.width = 1200;
 canvas.height = 600;
 
+
 botaoJogar.addEventListener("click", () => {
+
+    musicaTema.play();
+    musicaTema.volume = 0.4;
+
     telaInicial.style.display = "none";
     canvas.style.display = "block";
 
     iniciarFase1();
 });
-
 function iniciarFase1() {
     desenharFase();
 }
