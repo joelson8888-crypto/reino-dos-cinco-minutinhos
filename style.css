@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #120b24;
+  background: #10091f;
   overflow: hidden;
   font-family: Arial, sans-serif;
 }
@@ -25,68 +25,84 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, 40%);
+  transform: translate(-50%, 35%);
   width: 260px;
   height: 75px;
-  border: 4px solid #ffd86b;
-  border-radius: 14px;
   background: #ff4f93;
   color: white;
-  font-size: 34px;
+  border: 4px solid #ffd86b;
+  border-radius: 14px;
+  font-size: 32px;
   font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 8px 0 #8f2557;
-}
-
-#botaoJogar:active {
-  transform: translate(-50%, 48%);
-  box-shadow: 0 3px 0 #8f2557;
 }
 
 #game {
   display: none;
   width: 100vw;
   height: 100vh;
-  background: #63b7ff;
 }
 
 #telaVitoria {
   display: none;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(#3b1b56, #ff8fbd);
+  background: linear-gradient(#241040, #ff8fbd);
   color: white;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.caixa-vitoria {
-  background: #221237;
+.caixa {
+  background: #1d1230;
   border: 5px solid #ffd86b;
   border-radius: 20px;
   padding: 30px;
   max-width: 600px;
-  box-shadow: 0 0 30px #ff5ca8;
 }
 
-.caixa-vitoria h1 {
+.caixa h1 {
   color: #ffd86b;
   margin-bottom: 20px;
 }
 
-.caixa-vitoria p {
+.caixa p {
   font-size: 20px;
-  margin: 12px 0;
+  margin: 10px;
 }
 
-.caixa-vitoria button {
+.caixa button {
   margin-top: 20px;
-  padding: 15px 30px;
+  padding: 15px 25px;
   background: #ff4f93;
   color: white;
   border: 3px solid #ffd86b;
   border-radius: 12px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
+}
+
+#controlesMobile {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
+}
+
+#controlesMobile button {
+  width: 70px;
+  height: 60px;
+  font-size: 28px;
+  border-radius: 15px;
+  border: 3px solid #ffd86b;
+  background: #1d1230;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  #controlesMobile {
+    display: flex;
+  }
 }
